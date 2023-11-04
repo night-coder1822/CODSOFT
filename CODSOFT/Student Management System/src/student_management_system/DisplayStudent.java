@@ -19,7 +19,7 @@ public class DisplayStudent extends JFrame  {
         table.setFont(new Font("Tahoma", Font.PLAIN, 16));
 
         JScrollPane jsp = new JScrollPane(table);
-        jsp.setBounds(0, 130, 1000, 310);
+        jsp.setBounds(50, 130, 1000, 310);
         add(jsp);
 
         try {
@@ -30,8 +30,8 @@ public class DisplayStudent extends JFrame  {
             e.printStackTrace();
         }
 
-        setSize(825,650);
-        setLocation(300,40);
+        setSize(1100,650);
+        setLocation(150,40);
         setVisible(true);
     }
     
