@@ -6,14 +6,13 @@ import java.sql.*;
 import net.proteanit.sql.DbUtils;
 import java.awt.event.*;
 
-public class SearchStudent extends JFrame implements ActionListener {
-
+public class SearchStudent extends JFrame implements ActionListener 
+{
     Choice crollno;
     JTable table;
     JButton search, cancel;
     
     SearchStudent() {
-        
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
@@ -62,8 +61,6 @@ public class SearchStudent extends JFrame implements ActionListener {
         setSize(825,650);
         setLocation(300,40);
         setVisible(true);
-
-
     }
     
     public void actionPerformed(ActionEvent ae) {
@@ -80,8 +77,8 @@ public class SearchStudent extends JFrame implements ActionListener {
             setVisible(false);
         }
     }
-
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         new SearchStudent();
     }
 }

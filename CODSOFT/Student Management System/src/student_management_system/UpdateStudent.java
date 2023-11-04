@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
-public class UpdateStudent extends JFrame implements ActionListener {
-
+public class UpdateStudent extends JFrame implements ActionListener 
+{
     JTextField tfphone,tfemail;
     JLabel labelrollno;
     JButton submit,cancel;
@@ -24,12 +24,12 @@ public class UpdateStudent extends JFrame implements ActionListener {
         add(heading);
         
         JLabel lblrollnumber = new JLabel("Select Roll Number -");
-        lblrollnumber.setBounds(50,100,225,25);
+        lblrollnumber.setBounds(50,100,250,25);
         lblrollnumber.setFont(new Font("Tahoma", Font.PLAIN, 25));
         add(lblrollnumber);
         
         crollno = new Choice();
-        crollno.setBounds(280,100,200,28);
+        crollno.setBounds(300,100,200,28);
         add(crollno);
         
         try {
@@ -42,7 +42,6 @@ public class UpdateStudent extends JFrame implements ActionListener {
             e.printStackTrace();
         }
         
-        // Name
         JLabel lblname = new JLabel("Name");
         lblname.setBounds(50,170,150,30);
         lblname.setFont(new Font("serif", Font.BOLD, 20));
@@ -53,7 +52,6 @@ public class UpdateStudent extends JFrame implements ActionListener {
         labelname.setFont(new Font("Tahoma", Font.BOLD, 18));
         add(labelname);
         
-        // Father's Name
         JLabel lblfname = new JLabel("Father's Name");
         lblfname.setBounds(470,170,150,30);
         lblfname.setFont(new Font("serif", Font.BOLD, 20));
@@ -165,16 +163,12 @@ public class UpdateStudent extends JFrame implements ActionListener {
         
         submit = new JButton("Update");
         submit.setBounds(250, 520, 150, 35);
-        // submit.setBackground(Color.BLACK);
-        // submit.setForeground(Color.WHITE);
         submit.addActionListener(this);
         submit.setFont(new Font("Tahoma", Font.BOLD, 20));
         add(submit);
         
         cancel = new JButton("Cancel");
         cancel.setBounds(450, 520, 150, 35);
-        // cancel.setBackground(Color.BLACK);
-        // cancel.setForeground(Color.WHITE);
         cancel.addActionListener(this);
         cancel.setFont(new Font("Tahoma", Font.BOLD, 20));
         add(cancel);
@@ -203,7 +197,8 @@ public class UpdateStudent extends JFrame implements ActionListener {
         }
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         new UpdateStudent();
     }
 }

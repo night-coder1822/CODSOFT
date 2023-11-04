@@ -6,8 +6,8 @@ import java.util.*;
 import com.toedter.calendar.JDateChooser;
 import java.awt.event.*;
 
-public class AddStudent extends JFrame implements ActionListener {
-
+public class AddStudent extends JFrame implements ActionListener 
+{
     JTextField tfname, tffname, tfphone, tfemail, tfx, tfxii, tfsgpa;
     JLabel labelrollno;
     JDateChooser dcdob;
@@ -26,7 +26,6 @@ public class AddStudent extends JFrame implements ActionListener {
         heading.setFont(new Font("Serif", Font.BOLD, 30));
         add(heading);
         
-        // Name
         JLabel lblname = new JLabel("Name");
         lblname.setBounds(50, 150, 150, 30);
         lblname.setFont(new Font("serif", Font.BOLD, 20));
@@ -36,18 +35,16 @@ public class AddStudent extends JFrame implements ActionListener {
         tfname.setBounds(200, 150, 150, 30);
         add(tfname);
 
-        // Roll Number
         JLabel lblrollno = new JLabel("Roll No.");
         lblrollno.setBounds(50, 230, 150, 30);
         lblrollno.setFont(new Font("serif", Font.BOLD, 20));
         add(lblrollno);
         
-        labelrollno = new JLabel("BEN = "+first4);
+        labelrollno = new JLabel("10"+first4);
         labelrollno.setBounds(200, 230, 150, 30);
         labelrollno.setFont(new Font("serif", Font.BOLD, 20));
         add(labelrollno);
 
-        // Email
         JLabel lblemail = new JLabel("Email");
         lblemail.setBounds(50, 310, 150, 30);
         lblemail.setFont(new Font("serif", Font.BOLD, 20));
@@ -57,7 +54,6 @@ public class AddStudent extends JFrame implements ActionListener {
         tfemail.setBounds(200, 310, 150, 30);
         add(tfemail);
 
-        // Class 12th Marks
         JLabel lblxii = new JLabel("Class 12th");
         lblxii.setBounds(50, 390, 150, 30);
         lblxii.setFont(new Font("serif", Font.BOLD, 20));
@@ -67,7 +63,6 @@ public class AddStudent extends JFrame implements ActionListener {
         tfxii.setBounds(200, 390, 150, 30);
         add(tfxii);
 
-        // Father's Name
         JLabel lblfname = new JLabel("Father's Name");
         lblfname.setBounds(400, 150, 150, 30);
         lblfname.setFont(new Font("serif", Font.BOLD, 20));
@@ -77,7 +72,6 @@ public class AddStudent extends JFrame implements ActionListener {
         tffname.setBounds(600, 150, 150, 30);
         add(tffname);
         
-        // Phone Number
         JLabel lblphone = new JLabel("Phone No.");
         lblphone.setBounds(400, 230, 150, 30);
         lblphone.setFont(new Font("serif", Font.BOLD, 20));
@@ -87,7 +81,6 @@ public class AddStudent extends JFrame implements ActionListener {
         tfphone.setBounds(600, 230, 150, 30);
         add(tfphone);
         
-        // Class 10th Marks
         JLabel lblx = new JLabel("Class 10th");
         lblx.setBounds(400, 310, 150, 30);
         lblx.setFont(new Font("serif", Font.BOLD, 20));
@@ -97,7 +90,6 @@ public class AddStudent extends JFrame implements ActionListener {
         tfx.setBounds(600, 310, 150, 30);
         add(tfx);
         
-        // SGPA
         JLabel lblsgpa = new JLabel("SGPA");
         lblsgpa.setBounds(400, 390, 150, 30);
         lblsgpa.setFont(new Font("serif", Font.BOLD, 20));
@@ -107,14 +99,12 @@ public class AddStudent extends JFrame implements ActionListener {
         tfsgpa.setBounds(600, 390, 150, 30);
         add(tfsgpa);
         
-        // Submit Button
         submit = new JButton("Submit");
         submit.setBounds(220, 500, 150, 45);
         submit.addActionListener(this);
         submit.setFont(new Font("Tahoma",Font.BOLD, 20));
         add(submit);
 
-        // Cancel Button
         cancel = new JButton("Cancel");
         cancel.setBounds(420, 500, 150, 45);
         cancel.addActionListener(this);
@@ -149,7 +139,8 @@ public class AddStudent extends JFrame implements ActionListener {
             setVisible(false);
         }
     }
-    public static void main (String agrs[]) {
+    public static void main (String agrs[]) 
+    {
         new AddStudent();
     }
 }

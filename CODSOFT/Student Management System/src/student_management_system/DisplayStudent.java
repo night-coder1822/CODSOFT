@@ -4,15 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import net.proteanit.sql.DbUtils;
-// import java.awt.event.*;
 
-public class DisplayStudent extends JFrame  {
+public class DisplayStudent extends JFrame
+{
     JTable table;
-
     DisplayStudent() {
-
         setLayout(null);
-        
         getContentPane().setBackground(Color.WHITE);
 
         table = new JTable();
@@ -35,7 +32,8 @@ public class DisplayStudent extends JFrame  {
         setVisible(true);
     }
     
-    public static void main (String agrs[]) {
+    public static void main (String agrs[]) 
+    {
         new DisplayStudent();
     }
 }

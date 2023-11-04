@@ -4,13 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Project extends JFrame implements ActionListener {
-
+public class Project extends JFrame implements ActionListener 
+{
     Project() {
         setSize(1300,650);
         setBounds(35, 40, 1300, 650);
-        
-        // Background image
+
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/third.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1300, 650, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -19,7 +18,6 @@ public class Project extends JFrame implements ActionListener {
 
         JMenuBar mb = new JMenuBar();
 
-        // New Information
         JMenu newInformation = new JMenu("New Information");
         newInformation.setForeground(Color.BLUE);
         mb.add(newInformation);
@@ -29,7 +27,6 @@ public class Project extends JFrame implements ActionListener {
         studentInfo.addActionListener(this);
         newInformation.add(studentInfo);
 
-        // Update Information
         JMenu updateInformation = new JMenu("Update Information");
         updateInformation.setForeground(Color.BLUE);
         mb.add(updateInformation);
@@ -39,7 +36,6 @@ public class Project extends JFrame implements ActionListener {
         updatestudent.addActionListener(this);
         updateInformation.add(updatestudent);
 
-        // Delete Information
         JMenu deleteInformation = new JMenu("Delete Information");
         deleteInformation.setForeground(Color.BLUE);
         mb.add(deleteInformation);
@@ -49,7 +45,6 @@ public class Project extends JFrame implements ActionListener {
         deletestudent.addActionListener(this);
         deleteInformation.add(deletestudent);
 
-        // Search Information
         JMenu searchInformation = new JMenu("Search Information");
         searchInformation.setForeground(Color.BLUE);
         mb.add(searchInformation);
@@ -59,7 +54,6 @@ public class Project extends JFrame implements ActionListener {
         searchstudent.addActionListener(this);
         searchInformation.add(searchstudent);
 
-        // Display Information
         JMenu displayInformation = new JMenu("Display Information");
         displayInformation.setForeground(Color.BLUE);
         mb.add(displayInformation);
@@ -69,7 +63,6 @@ public class Project extends JFrame implements ActionListener {
         displaystudent.addActionListener(this);
         displayInformation.add(displaystudent);
 
-        // Exit
         JMenu exit = new JMenu("Exit");
         exit.setForeground(Color.RED);
         mb.add(exit);
@@ -101,7 +94,8 @@ public class Project extends JFrame implements ActionListener {
             new DisplayStudent();
         } 
     }
-    public static void main(String agrs[]) {
+    public static void main(String agrs[]) 
+    {
         new Project();
     }
 }

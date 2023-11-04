@@ -7,7 +7,7 @@ public class Splash extends JFrame implements Runnable
 {
     Thread t;
     Splash() {    
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/first.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/splashh.jpg"));
         Image i2 = i1.getImage().getScaledInstance(1200, 650, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
@@ -17,16 +17,9 @@ public class Splash extends JFrame implements Runnable
         t.start();
         
         setVisible(true);
-
         for (int i=2; i<=600; i++) {
             setLocation(i-520, i-560);
             setSize(i+600, i+60);
-
-//            try {
-//                 Thread.sleep(10^-10);
-//
-//            } catch (Exception e) {
-//            }
         }
     }
     public void run() {
@@ -35,10 +28,10 @@ public class Splash extends JFrame implements Runnable
             setVisible(false);
 
             new Project();
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {}
     }
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         new Splash();
     }
 }
