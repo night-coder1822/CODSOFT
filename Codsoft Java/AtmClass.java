@@ -3,12 +3,15 @@ import java.util.Scanner;
 class UserBankAcc 
 {
     private double balance;
-    public UserBankAcc (double balance) {
+
+    // Parameterized Constructor
+    public UserBankAcc(double balance) {
         this.balance = balance;
     }
     // Method to Print the balance of User Bank Account
     public void checkBalance() {
         System.out.println("Balance = "+balance);
+        System.out.println();
         return;
     }
 
@@ -76,6 +79,8 @@ public class AtmClass
             } 
             if (chance == 3) {
                 System.out.println("System Locked!!");
+            } else {
+                break;
             }
         }
         sc.close();
