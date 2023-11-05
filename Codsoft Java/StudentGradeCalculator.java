@@ -29,14 +29,16 @@ public class StudentGradeCalculator {
         System.out.println("Total Marks = "+total_marks);
         System.out.println("Average Percentage = "+avg_percent+"%");
         if (avg_percent <=100 && avg_percent > 90) {
-            System.out.println("Grade = A");
+            System.out.println("Grade = A+");
         } else if (avg_percent <=90 && avg_percent > 80) {
-            System.out.println("Grade = B");
+            System.out.println("Grade = A");
         } else if (avg_percent <=80 && avg_percent > 70) {
-            System.out.println("Grade = C");
+            System.out.println("Grade = B");
         } else if (avg_percent <=70 && avg_percent > 60) {
-            System.out.println("Grade = D");
+            System.out.println("Grade = C");
         } else if (avg_percent <=60 && avg_percent > 50) {
+            System.out.println("Grade = D");
+        } else if (avg_percent <=50 && avg_percent > 40) {
             System.out.println("Grade = E");
         } else {
             System.out.println("Failed");
